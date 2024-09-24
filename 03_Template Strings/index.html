@@ -1,0 +1,39 @@
+<!-- Template String or Template Literals -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adv JS</title>
+    <script>
+        let user = "Yahoo Baba";
+        // document.write("Hello " + user + " welcome to 2024");
+        // document.write(`Hello ${user} welcome to 2024`);
+        let marks = 350;
+        // document.write(`Hello ${user} your marks is ${marks}`);
+        // let hello = `Hello ${user} your marks is ${marks}`;
+        // let hello = `Hello "${user}" your 'marks' is ${marks}`;
+        let hello = `Hello "${user}" 
+        your 'marks' 
+        is ${marks}`;
+
+        document.write(hello);
+        console.log(hello);
+
+        let firstName = "Deepak";
+        let lastName = "Thakur";
+
+        function fullname(firstName, lastName){
+            return `${firstName} ${lastName}`;
+        }
+
+        let userName = `Hello ${fullname(firstName, lastName )}`;
+        document.write(userName);
+        console.log(userName);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
