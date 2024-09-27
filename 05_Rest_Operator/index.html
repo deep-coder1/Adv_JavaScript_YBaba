@@ -1,0 +1,57 @@
+<!-- Functions with Multiple Arguments -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adv JS</title>
+    <!-- <script>
+        function sum(){
+            console.log(arguments);
+
+            let sum = 0;
+            for(let i in arguments){
+                sum += arguments[i];
+            }
+            document.write(sum + "<br>");
+        }
+
+        // sum(20,30,40);
+        // sum(20,30);
+        sum("Yahoo Baba", 20,30,40);
+    </script> -->
+
+    <script>
+        function sum(name, course, ...args){
+            console.log(args);
+
+            document.write(`Hello ${name} of ${course} : `);
+
+            let sum = 0;
+            for(let i in args){
+                sum += args[i];
+            }
+            document.write(sum + "<br>");
+        }
+
+        // sum(20,30,40);
+        // sum(20,30);
+        sum("Yahoo Baba", "BTech", 20,30,40);
+        sum("Deepak Thakur", "MCA", 75,90);
+        sum("Sandeep Thakur", "BCA", 85,60,65,55,75);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+<!-- Output in screen -->
+<!-- Hello Yahoo Baba of BTech : 90
+Hello Deepak Thakur of MCA : 165
+Hello Sandeep Thakur of BCA : 340 -->
+
+<!-- Output in Console  -->
+<!-- (3) [20, 30, 40]
+(2) [75, 90]
+(5) [85, 60, 65, 55, 75] -->
