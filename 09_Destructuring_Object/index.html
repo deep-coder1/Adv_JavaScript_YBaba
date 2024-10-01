@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring Object, Adv JS</title>
+    <script>
+        // // 1 -->
+        let user = {
+            name : "Deepak Thakur",
+            age : 24,
+            city : "Mumbai"
+        }
+
+        // let {name, age, city} = user;
+        
+        // // console.log(name, age, city);
+        // console.log(name);
+        // console.log(age);
+        // console.log(city);
+        
+        // 2 -->
+        let {name : n, age : a, city : c} = user;
+        console.log(n);
+        console.log(a);
+        console.log(c);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+<!-- Output:
+Deepak Thakur
+24
+Mumbai -->
