@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP Introduction, Adv JS</title>
+    <script>
+        // 1 -->
+        // class student{
+        //     constructor(){
+        //         console.log("Constructor Function");
+        //     }
+        // }
+
+        // let a = new student();
+        // let b = new student();
+
+        // // 2 -->
+        // class student{
+        //     constructor(){
+        //         let name;
+        //         console.log("Constructor Function");
+        //     }
+        //     hello(){
+        //         console.log("Hello " + this.name)
+        //     }
+        // }
+
+        // let a = new student();
+
+        // a.name = "Deepak Thakur";
+        // a.hello();
+
+        // 3 -->
+         // 2 -->
+         class student{
+            constructor(name, age){
+                this.studentname = name;
+                this.studentage = age;
+                console.log("Constructor Function");
+            }
+            hello(){
+                // console.log("Hello " + this.studentname + "Your age is " + this.studentage)
+                console.log(`Hello ${this.studentname} Your age is ${this.studentage} `)
+                document.write(`Hello ${this.studentname} Your age is ${this.studentage} `)
+            }
+
+            static staticMethod(){
+                console.log("Static Function")
+            }
+        }
+
+        let a = new student("Deepak Thakur", 24);
+        let b = new student("Sandeep Thakur", 22);
+
+        // a.name = "Deepak Thakur";
+        a.hello();
+        b.hello();
+        student.staticMethod();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+<!-- 
+Output:
+Constructor Function
+Constructor Function
+Hello Deepak Thakur Your age is 24 
+Hello Sandeep Thakur Your age is 22 
+Static Functio -->

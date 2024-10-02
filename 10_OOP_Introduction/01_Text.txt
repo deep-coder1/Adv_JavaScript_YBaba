@@ -1,0 +1,20 @@
+
+Object Oriented Programming  (ES6 Version)
+
+Coding methodlogy / style / patteren
+. Code more Modular and Reusable
+. Well orginized Code
+. Easier to debug
+. Best for medium to large website projects
+
+1> Class
+2> Object
+
+Class -->
+. Properties
+2. Methods
+
+Methods -->
+-> Constructor
+-> Prototype
+-> Static
