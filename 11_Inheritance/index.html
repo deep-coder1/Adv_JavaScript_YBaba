@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance Adv JS 11</title>
+    <script>
+        // // 1 -->
+        // class employee{
+        //     constructor(name){
+        //         console.log("Constructor : Employee " + name);
+        //     }
+
+        //     info(){
+        //         console.log("Constructor : Employee " + name);
+        //     }
+        // }
+
+        // class manager extends employee{
+        //     constructor(name){
+        //         super();
+        //         console.log("Constructor : Manager " + name);
+        //     }
+        // }
+
+        // // let a = new employee();
+        // let a = new manager("Deepak Thakur");
+
+        // // 2 -->
+        // class employee{
+        //     constructor(name){
+        //         this.empname = name;
+        //         console.log("Constructor : Employee ");
+        //     }
+
+        //     info(){
+        //         console.log("Employee Name :  " + this.empname);
+        //     }
+        // }
+
+        // class manager extends employee{
+        //     info(){
+        //         super.info();
+        //         console.log("Manager Name :  " + this.empname);
+        //         super.info();
+        //     }
+        // }
+
+        // let a = new manager("Deepak Thakur");
+
+        // a.info();
+
+        // // 3 -->
+        // class employee{
+        //     constructor(name, age, salary){
+        //         this.empname = name;
+        //         this.empage = age;
+        //         this.empsalary = salary;
+        //         console.log("Constructor : Employee ");
+        //     }
+
+        //     info(){
+        //         // console.log("Employee Name :  " + this.empname);
+        //         document.write(`<h3>Employee Class</h3> 
+        //         Name : ${this.empname} <br>
+        //         Age : ${this.empage} <br>
+        //         Salary : ${this.empsalary} <br>`);
+        //     }
+        // }
+
+        // class manager extends employee{
+
+        //     info(){
+        //         let ta = 1000;
+        //         let pa = 300;
+        //         let totalsalary = this.empsalary + ta + pa;
+        //         document.write(`<h3>Manager Class</h3> 
+        //         Name : ${this.empname} <br>
+        //         Age : ${this.empage} <br>
+        //         Salary : ${totalsalary} <br>`);
+        //     }
+        // }
+
+        // let a = new manager("Deepak Thakur", 24, 35000);
+        // let b = new employee("Sandeep Thakur", 22, 28000);
+
+        // a.info();
+        // b.info();
+
+        // 4 -->
+        class employee{
+            constructor(name, age, salary){
+                this.empname = name;
+                this.empage = age;
+                this.empsalary = salary;
+                console.log("Constructor : Employee ");
+            }
+
+            info(){
+                document.write(`<h3>Employee Class</h3> 
+                Name : ${this.empname} <br>
+                Age : ${this.empage} <br>
+                Salary : ${this.empsalary} <br>`);
+            }
+        }
+
+        class manager extends employee{
+
+            info(){
+                let ta = 1000;
+                let pa = 300;
+                let totalsalary = this.empsalary + ta + pa;
+                document.write(`<h3>Manager Class</h3> 
+                Name : ${this.empname} <br>
+                Age : ${this.empage} <br>
+                Salary : ${totalsalary} <br>`);
+            }
+        }
+
+        class test extends manager{
+            
+        }
+
+        // let a = new manager("Deepak Thakur", 24, 35000);
+        // let b = new employee("Sandeep Thakur", 22, 28000);
+        let a = new test("Deepak Thakur", 24, 20000);
+
+        a.info();
+        // b.info();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+<!-- 
+Output:
+ Web o/p:
+Manager Class
+Name : Deepak Thakur
+Age : 24
+Salary : 21300
+
+Console O/P:
+Constructor : Employee
+-->
