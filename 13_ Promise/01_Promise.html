@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise, Adv JS 13</title>
+    <script>
+        let complete = true;
+
+        let prom = new Promise(function(resolve, reject){
+            if(complete){
+                resolve();
+            } else {
+                reject();
+            }
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
