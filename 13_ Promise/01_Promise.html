@@ -6,17 +6,22 @@
     <title>Promise, Adv JS 13</title>
     <script>
         let complete = true;
+        // let complete = false;
 
         let prom = new Promise(function(resolve, reject){
             if(complete){
-                resolve();
+                resolve("I am sucessfull.");
             } else {
-                reject();
+                reject("I am failed.");;
             }
         });
+
+        console.log(prom);
     </script>
 </head>
 <body>
     
 </body>
 </html>
+
+<!-- Time: 11:50 sec  -->
