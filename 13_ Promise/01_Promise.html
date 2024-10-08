@@ -8,15 +8,45 @@
         let complete = true;
         // let complete = false;
 
-        let prom = new Promise(function(resolve, reject){
-            if(complete){
-                resolve("I am sucessfull.");
-            } else {
-                reject("I am failed.");;
-            }
+        function prom(complete){
+            // let prom = new Promise(function(resolve, reject){
+            return new Promise(function(resolve, reject){
+                console.log("Featching data, Please wait.");
+                setTimeout(() => {
+                    if(complete){
+                        resolve("I am sucessfull.");
+                    } else {
+                        reject("I am failed.");;
+                    }
+                }, 3000)
+            // if(complete){
+            //     resolve("I am sucessfull.");
+            // } else {
+            //     reject("I am failed.");;
+            // }
         });
+        }
 
-        console.log(prom);
+        let onfulfilment = (result) => {
+            console.log(result);
+        }
+
+        let onRejection = (error) => {
+            console.log(error);
+        }
+
+        // prom(false).then(onfulfilment).catch(onRejection);
+        prom(true).then(onfulfilment).catch(onRejection);
+
+        // prom(true).then(onfulfilment);
+        // prom(true).catch(onRejection);
+
+        // prom(false).then(onfulfilment);
+        // prom(false).catch(onRejection);
+
+        // console.log(prom);
+        // console.log(prom(true));
+        // console.log(prom(false));
     </script>
 </head>
 <body>
@@ -24,4 +54,4 @@
 </body>
 </html>
 
-<!-- Time: 11:50 sec  -->
+<!-- Time: 20:20 sec  -->
