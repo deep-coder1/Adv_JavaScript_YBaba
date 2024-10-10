@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise, Adv JS 13</title>
+    <script>
+        let complete = true;
+        // let complete = false;
+
+        function prom(a,b) {
+            // let prom = new Promise(function(resolve, reject){
+            return new Promise(function (resolve, reject) {
+                console.log("Featching data, Please wait.");
+                var c = a / b;
+                setTimeout(() => {
+                    if (a,b) {
+                        resolve(`Your answer : ${c}`);
+                    } else {
+                        reject("Failed to calculate.");;
+                    }
+                }, 2000)
+                // if(complete){
+                //     resolve("I am sucessfull.");
+                // } else {
+                //     reject("I am failed.");;
+                // }
+            });
+        }
+
+        // let onfulfilment = (result) => {
+        //     console.log(result);
+        // }
+
+        // let onRejection = (error) => {
+        //     console.log(error);
+        // }
+
+        // prom(false).then(onfulfilment).catch(onRejection);
+        // prom(true).then((result) => {
+        prom(9,2).then((result) => {
+            console.log(result);
+        }
+        ).catch((error) => {
+            console.log(error);
+        });
+
+        // prom(true).then(onfulfilment);
+        // prom(true).catch(onRejection);
+
+        // prom(false).then(onfulfilment);
+        // prom(false).catch(onRejection);
+
+        // console.log(prom);
+        // console.log(prom(true));
+        // console.log(prom(false));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<!-- Time: 24:30 sec  -->
