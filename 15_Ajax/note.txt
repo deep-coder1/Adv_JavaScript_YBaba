@@ -1,0 +1,7 @@
+AJAX:-
+A - Asynchronous
+J - JavaScript
+A - and
+X - XML
+
+AJAX is a technique for creating fasr and dynamic web pages.

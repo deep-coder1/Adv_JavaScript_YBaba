@@ -6,6 +6,28 @@
     <title>Ajax Adv JS 15</title>
 </head>
 <body>
+    <p id="demo">Here we load data.</p>
+    <button onclick="loadData()">Click</button>
+
+    <script>
+        function loadData() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function(){
+                if(this.readyState == 4 && this.status == 200){
+                    console.log(this.responseText);
+                    document.getElementById("demo").innerHTML = this.responseText;
+                } else if(this.readyState == 4 && this.status == 404){
+                    document.getElementById("demo").innerHTML = "File not fund.";
+                }
+            }
+
+            // xhttp.open('GET',"content/readme.txt",true);
+            xhttp.open('GET',"https://jsonplaceholder.typicode.com/posts",true);
+            xhttp.send();
+        }
+    </script>
     
 </body>
 </html>
+
+<!-- Vid time 13:25 -->
