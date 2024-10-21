@@ -26,8 +26,11 @@
         // .catch((error) => document.write("Can't fetch data"));
         // .then((data) => console.log(data))
         .then((data) => {
+            console.log(data);
+
             for(var x in data){
-                document.write(x);
+                // document.write(x);
+                document.write(`${data[x].name} - ${data[x].email} - ${data[x].address.city} <br> `);
             }
         })
         .catch((error) => console.log("Can't fetch data"));
@@ -38,4 +41,4 @@
 </body>
 </html>
 
-<!-- Vid Time 21:20 -->
+<!-- Vid Time 25:10 -->
