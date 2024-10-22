@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch() Adv JS 16</title>
+    <script>
+        fetch("json/student_data.json")
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data);
+
+            for(var x in data){
+                var a = `${data[x].name} - ${data[x].age} - ${data[x].city} <br>`;
+                document.write(a);
+            }
+        })
+        .catch((error) => document.write("Can't fetch data"));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+<!-- Vid Time 27:52 -->

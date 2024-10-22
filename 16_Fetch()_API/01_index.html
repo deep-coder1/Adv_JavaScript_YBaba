@@ -30,7 +30,9 @@
 
             for(var x in data){
                 // document.write(x);
-                document.write(`${data[x].name} - ${data[x].email} - ${data[x].address.city} <br> `);
+                // document.write(`${data[x].name} - ${data[x].email} - ${data[x].address.city} <br> `);
+                var a = `${data[x].name} - ${data[x].email} - ${data[x].address.city} <br> `;
+                document.write(a);
             }
         })
         .catch((error) => console.log("Can't fetch data"));
