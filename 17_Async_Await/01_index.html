@@ -5,23 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Async Await Adv JS 17</title>
     <script>
+        // 1 -->
         // async function test(){
-        // let test = async function(){
-        // let test = async () => {
-        //     return "Hello";
-        // }
+        // // let test = async function(){
+        // // let test = async () => {
+        // //     return "Hello";
+        // // }
 
-        let test = async () => "Hello";
+        // let test = async () => "Hello";
         
-        // console.log(test());
-        test().then((result) => {
-            console.log(result);
-        });
-    </script>
+        // // console.log(test());
+        // test().then((result) => {
+        //     console.log(result);
+        // });
+
+        // 2 -->
+        async function test(){
+            console.log("2 : Message");
+            await console.log("3 : Message");
+            console.log("4 : Message");
+        }
+        console.log("1 : Message");
+        test();
+        console.log("5 : Message");
+        </script>
 </head>
 <body>
     
 </body>
 </html>
 
-<!-- Vid Time 06:50 -->
+<!-- Vid Time 12:12 -->
