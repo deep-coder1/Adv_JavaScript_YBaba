@@ -27,8 +27,15 @@
             return students;
         }
 
-        let a = test();
-        console.log(a);
+        // let a = test();
+        // console.log(a);
+
+        test().then((res) => {
+            console.log(res);
+        }).catch((error) => {
+            console.log(error);
+        });
+
         </script>
 </head>
 <body>
@@ -36,4 +43,4 @@
 </body>
 </html>
 
-<!-- Vid Time 18:10 -->
+<!-- Vid Time 20:52 -->
