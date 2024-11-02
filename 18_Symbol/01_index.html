@@ -6,10 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Symbol Adv JS 18</title>
     <script>
-        let id = Symbol("Hello");
+        // // 1 -->
+        // let id = Symbol("Hello");
 
-        console.log(id);
-        console.log(typeof id);
+        // console.log(id);
+        // console.log(typeof id);
+
+        // // 2 -->
+        // let id1 = Symbol("Hello");
+        // let id2 = Symbol("Hello");
+
+        // console.log(id1 == id2);
+
+        // let str1 = "Hello";
+        // let str2 = "Hello";
+
+        // console.log(str1 == str2);
+
+        // // 3 -->
+        // let id = Symbol("Hello");
+
+        // console.log(id);
+        // console.log(id.toString());
+        // console.log(id.description);
+        // // alert(id.toString());
+        // // alert(id.description);
+
+        // 4 -->
+        let age = Symbol();
+
+        let user = {
+            name : 'Yahoo Baba',
+            class : 'BTech',
+            [age] : 25
+        };
+
+        console.log(user);
+
     </script>
 </head>
 
@@ -19,4 +52,4 @@
 
 </html>
 
-<!-- Vid Time 05:02 end -->
+<!-- Vid Time 10:25 end -->
