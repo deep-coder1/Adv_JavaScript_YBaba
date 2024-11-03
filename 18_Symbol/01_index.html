@@ -32,17 +32,64 @@
         // // alert(id.toString());
         // // alert(id.description);
 
-        // 4 -->
-        let age = Symbol();
+        // // 4 -->
+        // let age = Symbol("age");
+
+        // let user = {
+        //     name : 'Yahoo Baba',
+        //     class : 'BTech',
+        //     [age] : 25
+        // };
+
+        // console.log(user);
+
+        // // 5 -->
+        // let age = Symbol("age");
+
+        // let user = {
+        //     name : 'Yahoo Baba',
+        //     class : 'BTech'
+        // };
+
+        // user[age] = 25;
+
+        // console.log(user);
+        // console.log(user.class);
+        // console.log(user[age]);
+
+        // // 6 -->
+        // let age = Symbol("age");
+
+        // let user = {
+        //     name : 'Yahoo Baba',
+        //     class : 'BTech'
+        // };
+
+        // user[age] = 25;
+        // user["gender"] = "Male";
+        
+        // for(let key in user){
+        //     console.log(key);;
+        // }
+
+        // console.log(user);
+        // console.log(user.class);
+        // console.log(user[age]);
+
+        // 7 -->
+        let age = Symbol("age");
 
         let user = {
             name : 'Yahoo Baba',
-            class : 'BTech',
-            [age] : 25
+            class : 'BTech'
         };
 
-        console.log(user);
+        user[age] = 25;
+        user["gender"] = "Male";
 
+        console.log(user);
+        console.log(JSON.stringify(user));
+        
     </script>
 </head>
 
@@ -52,4 +99,4 @@
 
 </html>
 
-<!-- Vid Time 10:25 end -->
+<!-- Vid Time 17:23 end -->
