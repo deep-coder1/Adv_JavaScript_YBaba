@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iteratos, Adv JS 19</title>
+    <script>
+        let numbers  = [100,200,300];
+
+        console.log(numbers);
+        let iter = numbers[Symbol.iterator]();
+
+        console.log(iter);
+        // console.log(iter.next());
+        // console.log(iter.next());
+        iter.next();
+        iter.next();
+        console.log('Hello');
+        console.log('Hi');
+        console.log(iter.next());
+        console.log(iter.next().value);
+        console.log(iter.next().done);
+        console.log(iter.next());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+<!-- Vid Time 11:30 -->
