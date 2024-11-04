@@ -5,22 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iteratos, Adv JS 19</title>
     <script>
-        let numbers  = [100,200,300];
+        // // 1 -->
+        // let numbers  = [100,200,300];
 
-        console.log(numbers);
-        let iter = numbers[Symbol.iterator]();
+        // console.log(numbers);
+        // let iter = numbers[Symbol.iterator]();
 
-        console.log(iter);
+        // console.log(iter);
+        // // console.log(iter.next());
+        // // console.log(iter.next());
+        // iter.next();
+        // iter.next();
+        // console.log('Hello');
+        // console.log('Hi');
         // console.log(iter.next());
+        // console.log(iter.next().value);
+        // console.log(iter.next().done);
         // console.log(iter.next());
-        iter.next();
-        iter.next();
-        console.log('Hello');
-        console.log('Hi');
-        console.log(iter.next());
-        console.log(iter.next().value);
-        console.log(iter.next().done);
-        console.log(iter.next());
+
+        // // 2 -->
+        // // let numbers  = [100,200,300];
+        // let str  = "Deepak Thakur";
+
+        // // let iter = numbers[Symbol.iterator]();
+        // let iter = str[Symbol.iterator]();
+
+        // let result = iter.next();
+       
+        // while(!result.done){
+        //     console.log(result.value);
+        //     result = iter.next();
+        // }
+
+        // // 3 -->
+        // let str  = "Deepak Thakur";
+
+        // for(let char of str){
+        //     console.log(char);
+        // }
+
+        // 4 -->
+        function numberIterator(arr){
+            var nextNum = 0;
+            return {}
+        }
+        let numbers  = [100,200,300,400,500];
+
+        let num = numberIterator(numbers);
+
     </script>
 </head>
 <body>
@@ -28,4 +60,4 @@
 </body>
 </html>
 
-<!-- Vid Time 11:30 -->
+<!-- Vid Time 18:35 -->
