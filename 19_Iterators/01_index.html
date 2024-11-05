@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,7 +32,7 @@
         // let iter = str[Symbol.iterator]();
 
         // let result = iter.next();
-       
+
         // while(!result.done){
         //     console.log(result.value);
         //     result = iter.next();
@@ -45,19 +46,42 @@
         // }
 
         // 4 -->
-        function numberIterator(arr){
+        function numberIterator(arr) {
             var nextNum = 0;
-            return {}
+            return {
+                next() {
+                    if (nextNum < arr.length) {
+                        return {
+                            value: arr[nextNum++],
+                            done: false
+                        }
+                    } else {
+                        return {
+                            done: true
+                        }
+                    }
+                }
+            }
         }
-        let numbers  = [100,200,300,400,500];
+        let numbers = [100, 200, 300, 400, 500];
 
         let num = numberIterator(numbers);
+        console.log(num.next().value);
+        // console.log(num.next());
+        num.next();
+        console.log(num.next().value);
+        console.log(num.next().value);
+        console.log(num.next());
+        console.log(num.next());
+        console.log(num.next());
 
     </script>
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
 
-<!-- Vid Time 18:35 -->
+<!-- Vid Time 25:13 end -->
