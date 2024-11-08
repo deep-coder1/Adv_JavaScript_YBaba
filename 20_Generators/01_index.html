@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generators, Adv JS 20</title>
     <script>
-        function generateit(){
+        // function generateit(){
+        function *generateit(){
             console.log("First Message");
+            yield 'Yield No. 1';
             console.log("Second Message");
+            yield 'Yield No. 2';
         }
 
-        generateit();
+        // generateit();
+        let g = generateit();
+        console.log(g.next());
+        console.log(g.next());
+        console.log(g.next());
     </script>
 </head>
 <body>
@@ -18,4 +25,4 @@
 </body>
 </html>
 
-<!-- Vid Time 5:15 start -->
+<!-- Vid Time 9:25 start -->
