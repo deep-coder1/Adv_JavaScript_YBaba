@@ -1,28 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generators, Adv JS 20</title>
     <script>
-        // function generateit(){
-        function *generateit(){
-            console.log("First Message");
-            yield 'Yield No. 1';
-            console.log("Second Message");
-            yield 'Yield No. 2';
+        // // 1 --> 
+        // // function generateit(){
+        // function *generateit(){
+        //     console.log("First Message");
+        //     yield 'Yield No. 1';
+        //     console.log("Second Message");
+        //     yield 'Yield No. 2';
+        // }
+
+        // // generateit();
+        // let g = generateit();
+        // console.log(g.next());
+        // console.log(g.next());
+        // console.log(g.next());
+
+        // // 2 --> 
+        // function *generateit(){
+        //     yield 'Yield No. 1';
+        //     yield 'Yield No. 2';
+        //     yield 'Yield No. 3';
+        // }
+
+        // let g = generateit();
+        // // console.log(g.next());
+        // console.log(g.next().value);
+        // g.next();
+        // // console.log(g.next());
+        // console.log(g.next().value);
+
+        // // 3 --> 
+        // function* generateit() {
+        //     yield 'Yield No. 1';
+        //     yield 'Yield No. 2';
+        //     yield 'Yield No. 3';
+        // }
+
+        // let g = generateit();
+        // for(let value of g){
+        //     console.log(value);
+        // }
+        // // console.log(g.next().value);
+
+        // 4 --> 
+        function* generateit() {
+            let nextNum = 300;
+            while(true){
+                yield(nextNum++);
+            }
         }
 
-        // generateit();
         let g = generateit();
-        console.log(g.next());
-        console.log(g.next());
-        console.log(g.next());
+        console.log(g.next().value);
+        console.log(g.next().value);
+        console.log(g.next().value);
+        console.log(g.next().value);
+        console.log(g.next().value);
+
+        // for(let value of g){
+        //     console.log(value);
+        // }
     </script>
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
 
 <!-- Vid Time 9:25 start -->
