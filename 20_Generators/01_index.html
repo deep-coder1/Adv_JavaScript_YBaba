@@ -79,21 +79,63 @@
         //     console.log(value);
         // }
 
-        // 6 --> 
+        // // 6 --> 
+        // function* generateit() {
+        // //    let result = yield;
+        // //    let result = (yield) * 10;
+        //    let yArray = [yield, yield, yield];
+        //    console.log(`Result : ${yArray}`);
+        //    console.log(`Result : ${yArray[2]}`);
+        // }
+
+        // let g = generateit();
+        // g.next();
+        // // g.next(500);
+        // g.next("PHP");
+        // g.next(600);
+        // g.next(700);
+        // g.next(800);
+
+        // // 7 --> 
+        // function* generateit() {
+        //    yield 55;
+        // //    yield ['Node', 'Angular', 'React'];
+        //    yield* ['Node', 'Angular', 'React'];
+        // }
+
+        // let g = generateit();
+        // console.log(g.next().value);
+
+        // console.log(g.next().value);
+        // console.log(g.next().value);
+        // console.log(g.next().value);
+        // console.log(g.next().value);
+
+        // // 8 --> Use spread through
+        // function* generateit() {
+        //    yield 'PHP';
+        //    yield 'Node';
+        //    yield 'Angular';
+        //    yield 'React';
+        // }
+
+        // let g = generateit();
+        // console.log(g.next().value);
+        // console.log([...g]);
+
+        // 9 --> 
         function* generateit() {
-        //    let result = yield;
-        //    let result = (yield) * 10;
-           let yArray = [yield, yield, yield];
-           console.log(`Result : ${yArray}`);
-           console.log(`Result : ${yArray[2]}`);
+           yield 'PHP';
+           yield 'Node';
+           yield 'Angular';
+           yield 'React';
         }
 
         let g = generateit();
-        g.next();
-        g.next(500);
-        g.next(600);
-        g.next(700);
-        g.next(800);
+        console.log(g.next().value);
+        console.log(g.return('Ending Now'));
+        console.log(g.next().value);
+        
     </script>
 </head>
 
@@ -103,4 +145,4 @@
 
 </html>
 
-<!-- Vid Time 20:45 start -->
+<!-- Vid Time 20:45 -->
