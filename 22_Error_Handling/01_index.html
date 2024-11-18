@@ -5,15 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Error Handling Adv JS 22</title>
     <script>
-        try{
-            console.log('Start of Try');
+        // // 1 -->
+        // try{
+        //     console.log('Start of Try');
 
-            blabla;
+        //     blabla();
 
-            console.log('End of Try');
-        }catch{
-            console.log('Error has occured');
-        }
+        //     console.log('End of Try');
+        // }catch(error){
+        //     // console.log('Error has occured');
+        //     console.log(error);
+        // }
+
+        // // 2 -->
+        // try{
+        //     setTimeout(function(){
+        //         // 
+        //         blabla;
+        //     }, 1000)
+        // }catch(error){
+        //     // console.log('Error has occured');
+        //     console.log(error);
+        // }
+
+        // 3 -->
+        setTimeout(function(){
+            try{
+                blabla;
+            }catch(error){
+                console.log('Error has occured.');
+            }
+        }, 1000)
     </script>
 </head>
 <body>
@@ -21,4 +43,4 @@
 </body>
 </html>
 
-<!-- Vid Time 03:50 -->
+<!-- Vid Time 08:20 -->
