@@ -1,0 +1,9 @@
+1 --> Different type of Errors in JavaScript:
+.EvalError
+.RangeError
+.ReferenceError
+.SyntaxError
+.TypeError
+.URLError
+.AggregateError
+

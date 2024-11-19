@@ -28,14 +28,28 @@
         //     console.log(error);
         // }
 
-        // 3 -->
-        setTimeout(function(){
-            try{
-                blabla;
-            }catch(error){
-                console.log('Error has occured.');
-            }
-        }, 1000)
+        // // 3 -->
+        // setTimeout(function(){
+        //     try{
+        //         blabla;
+        //     }catch(error){
+        //         console.log('Error has occured.');
+        //     }
+        // }, 1000)
+
+        // 4 -->
+        try{
+            console.log('Start of Try');
+
+            blabla();
+
+            console.log('End of Try');
+        }catch(error){
+            // console.log('Error has occured');
+            console.log(error.name);
+            console.log(error.message);
+            console.log(error.stack);
+        }
     </script>
 </head>
 <body>
@@ -43,4 +57,4 @@
 </body>
 </html>
 
-<!-- Vid Time 08:20 -->
+<!-- Vid Time 13:10 -->
