@@ -37,18 +37,44 @@
         //     }
         // }, 1000)
 
-        // 4 -->
+        // // 4 -->
+        // try{
+        //     console.log('Start of Try');
+
+        //     blabla();
+
+        //     console.log('End of Try');
+        // }catch(error){
+        //     // console.log('Error has occured');
+        //     console.log(error.name);
+        //     console.log(error.message);
+        //     console.log(error.stack);
+        // }
+
+        // // 5 -->
+        // try{
+        //     blabla();
+        // }catch(error){
+        //     // console.log('Error has occured');
+        //     if(error instanceof ReferenceError){
+        //         console.log('ReferenceError');;
+        //     }else if(error instanceof TypeError){
+        //         console.log('TypeError');
+        //     }else{
+        //         console.log('Unknown Error');
+        //     }
+        // }
+
+        // 6 -->
         try{
-            console.log('Start of Try');
+            let json = '{"name": "Deepak Thakur", "age": 25}';
+            let user = JSON.parse(json);
 
-            blabla();
+            console.log(user.name);
+            console.log(user.age);
 
-            console.log('End of Try');
         }catch(error){
-            // console.log('Error has occured');
-            console.log(error.name);
-            console.log(error.message);
-            console.log(error.stack);
+            console.log(error);
         }
     </script>
 </head>
@@ -57,4 +83,4 @@
 </body>
 </html>
 
-<!-- Vid Time 13:10 -->
+<!-- Vid Time 18:30 -->
