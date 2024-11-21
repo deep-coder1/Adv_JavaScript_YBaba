@@ -65,10 +65,27 @@
         //     }
         // }
 
-        // 6 -->
+        // // 6 -->
+        // try{
+        //     let json = '{"name": "Deepak Thakur", "age": 25}';
+        //     let user = JSON.parse(json);
+
+        //     console.log(user.name);
+        //     console.log(user.age);
+
+        // }catch(error){
+        //     console.log(error);
+        // }
+
+        // 7 -->
         try{
-            let json = '{"name": "Deepak Thakur", "age": 25}';
+            // let json = '{"name": "Deepak Thakur", "age": 25}';
+            let json = '{"age": 25}';
             let user = JSON.parse(json);
+
+            if(!user.name){
+                throw new Error("Incomplete data : No name");
+            }
 
             console.log(user.name);
             console.log(user.age);
@@ -83,4 +100,4 @@
 </body>
 </html>
 
-<!-- Vid Time 18:30 -->
+<!-- Vid Time 21:15 -->
