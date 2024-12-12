@@ -80,7 +80,8 @@
         // 7 -->
         try{
             // let json = '{"name": "Deepak Thakur", "age": 25}';
-            let json = '{"age": 25}';
+            // let json = '{"age": 25}';
+            let json = '{"name": "Deepak Thakur", "age": 25}';
             let user = JSON.parse(json);
 
             if(!user.name){
@@ -92,6 +93,8 @@
 
         }catch(error){
             console.log(error);
+        }finally{
+            console.log('Finally');
         }
     </script>
 </head>
@@ -100,4 +103,4 @@
 </body>
 </html>
 
-<!-- Vid Time 21:15 -->
+<!-- Vid Time 23:59 -->
